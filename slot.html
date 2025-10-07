@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Your Slot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+ <link  rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <h1>Downtown Dealership</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="explorecars.html">Explore Cars</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Book Your Slot</h2>
+  <form action="#" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+
+    <label for="car-model">Select Car Model</label>
+    <select id="car-model" name="car-model" required>
+      <option value="">-- Select --</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+      <option value="toyota">Toyota</option>
+      <option value="maruti">Maruti Suzuki</option>
+      <option value="kia">Kia</option>
+    </select>
+
+    <label for="preferred-date">Preferred Date</label>
+    <input type="date" id="preferred-date" name="preferred-date" required />
+
+    <label for="preferred-time">Preferred Time</label>
+    <input type="time" id="preferred-time" name="preferred-time" required />
+
+    <button type="submit">Book Slot</button>
+  </form>
+</main>
+
+</body>
+</html>

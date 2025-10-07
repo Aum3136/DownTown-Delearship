@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #f4f6f9;
+}
+
+.explore-cars {
+  padding: 2rem;
+  background-color: #e8f0fe;
+  text-align: center;
+}
+
+.explore-cars h2 {
+  font-size: 2rem;
+  color: #0a74da;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category h3 {
+  color: #0a74da;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category li {
+  margin: 0.25rem 0;
+}

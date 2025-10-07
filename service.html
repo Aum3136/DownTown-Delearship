@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Servicing Request</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+
+</head>
+<body>
+
+<header>
+  <h1>Car Servicing Request Form</h1>
+</header>
+
+<section class="service-form">
+  <h2>Tell us what your car needs</h2>
+  <form action="submit-service.php" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+
+    <label for="car">Car Model:</label>
+    <input type="text" id="car" name="car" required />
+
+    <label for="service-type">Type of Service:</label>
+    <fieldset>
+  <legend>Choose Services:</legend>
+
+  <label><input type="checkbox" name="services[]" value="oil-change" /> Oil Change</label><br/>
+  <label><input type="checkbox" name="services[]" value="engine-check" /> Engine Check</label><br/>
+  <label><input type="checkbox" name="services[]" value="brake-service" /> Brake Service</label><br/>
+  <label><input type="checkbox" name="services[]" value="battery" /> Battery Replacement</label><br/>
+  <label><input type="checkbox" name="services[]" value="general" /> General Servicing</label><br/>
+  <label><input type="checkbox" name="services[]" value="other" /> Other</label>
+</fieldset>
+
+
+    <label for="details">Additional Details or Issues:</label>
+    <textarea id="details" name="details" rows="4" placeholder="Describe any issues or specific service requirements..."></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+</body>
+</html>
